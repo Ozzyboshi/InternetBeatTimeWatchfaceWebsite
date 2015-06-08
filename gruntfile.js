@@ -90,7 +90,7 @@ module.exports = function(grunt) {
                     base: 'public',
                     hostname: '0.0.0.0',
                     keepalive: true,
-                    livereload: true
+                    livereload: false
                 }
             }
         },
