@@ -26,17 +26,17 @@ block content
                 //- img(src="http://placehold.it/1200x315" alt="...")
                 //- .carousel-caption
                 .carousel-content
-                    h3 The Developer's Best Friend
-                    p Instantenously execute any command
+                    h3 Internet beat time
+                    p Read current internet beat time and local time on your wrist at the same time
             .item(role="listbox")
                 //- img(src="http://placehold.it/1200x315" alt="...")
                 .carousel-content
-                    h3 Simple and Elegant
-                    p Guake has just the features your need
+                    h3 Simple and Essential
+                    p Read beats, centibeats and internet date based on Biel Mean Time (BMT),  
             .item(role="listbox")
                 .carousel-content
-                    h3 Direct Access to Any Console
-                    p Switch back and forth between your contexts
+                    h3 Power saving mode
+                    p Save battery juice while on ambient mode
 
         //- <!-- Controls -->
         a.left.carousel-control(href="#overview-carousel" role="button" data-slide="prev")
@@ -50,16 +50,15 @@ block content
                 .col-lg-8.col-lg-offset-2
 
                     h1.animate-in(data-animation="space-in")
-                        | Discover Guake Terminal
+                        | Discover Internet beat time watchface
 
                     p.animate-build(data-animation="fade-in" data-build="1")
-                        | Guake is a top-down terminal for Gnome, and is highly inspirated by the famous
-                        | terminal used in Quake <i class="glyphicon glyphicon-copyright-mark"></i>.
+                        | Internet beat time watchface is a watchface that runs on every Android wear device
+                        | You can customize the watchface background and foreground color using the Android application automatically installed on your Android device
 
                     p.animate-build(data-animation="fade-in" data-build="2")
-                        | You can instantenously show and hide your terminal with a single key
-                        | stroke, execute a command, and then go back to your previous task
-                        | without breaking your workflow.
+                        | Power saving mode active when the smartwatch enters in ambient mode, when this occurs the watchface is updated every minute.
+                        | If the save energy mode is not active on the Android app the watchupdate is updated when the beat time changes as well
             .row
                 .page-scroll.animate-build(data-animation="fade-in" data-build="3")
                     #what-hook
@@ -72,29 +71,30 @@ block content
                 .col-lg-8.col-lg-offset-2
 
                     h1.animate-in(data-animation="space-in" data-build="1")
-                        | How does Guake look like?
+                        | How does Internet beat time watch face look like?
 
             .row
                 .col-md-12.col-xs-8.col-xs-offset-2.col-md-offset-0
                     .row.animate-build(data-animation="fade-in" data-build="2")
                         .col-xs-12.col-md-offset-1.col-md-5
                             p.screenshot-legend
-                                | Your Terminal Anywhere On Your Desktop, Just A Shortcut Away!
+                                | Internet beat time on your wrist, always at your fingertips!
 
                             p.screenshot-description
-                                | Imagine you are working in your favorite text editor and want to
-                                | execute some commands, like execute the unit test of your code,
-                                | check a man page, or edit some configuration file. You can do it
-                                | at lightning speed without leaving your keyboard. Just press your
-                                | predefined "Show Guake" hotkey, execute your command, and repress
-                                | it to hide the terminal and go back to your work.
+                                | Imagine you are making an appointment on the internet with your foreign friend,
+                                | you must first agree on a specific time. Maybe your friend lives on a different timezone
+                                | and maybe where he's using daylight saving mode and you are not, so you must do the math.
+                                | Internet beat time is designed to avoid this complexity, it is immutable throughout different time zone and
+                                | daylight saving mode independent.
+                                | Just agree on a internet beat time hour with your friend and that's all.
+                                | For more information visit the <a href="http://en.wikipedia.org/wiki/Swatch_Internet_Time">Internet beat time wikipedia webpage</a>
 
                         .col-xs-12.col-md-5
                             a.screenshot-link(href="img/screenshot.png")
                                img(src="img/screenshot-tb.png")
                             br
                             a.screenshot-link(href="img/screenshot2.jpg")
-                               img(src="img/screenshot2-tb.jpg")
+                               img(src="img/screenshot2-tb.png")
 
             .row
                 .page-scroll.animate-build(data-animation="fade-in" data-build="3")
@@ -102,127 +102,37 @@ block content
                     a.btn.btn-circle(href='#more')
                         i.fa.fa-angle-double-down.animated
 
-    section#more.slide
-        .container
-            .row
-                .col-xs-12
-                    h1.animate-in(data-animation="space-in" data-build="1")#scale-animation
-                        | Tell me More!
-            .row.feature-list
-                .col-xs-12.col-sm-4
-                    h3 Simple Easy, Elegant
-                    p
-                        | Smooth integration of the terminal into the GNOME environment, with
-                        | Compiz Transparency and show animation.
-
-                .col-xs-12.col-sm-4
-                    h3 Multi Multi-monitor
-                    p
-                        | Guake supports Multimonitor setup. Open it on the monitor where your
-                        | mouse is, or in a dedicated screen.
-
-                .col-xs-12.col-sm-4
-                    h3 Multi Tabs
-                    p
-                        | Use Several named tabs, with names automatically set from the running
-                        | command, or easilly customized.
-                    p
-                        | Get instant access to your tabs with custom shortcut.
-
-            .row.feature-list
-                .col-xs-12.col-sm-4
-                    h3 Quick Open
-                    p
-                        | See a filename in your terminal output? Simply click on it and it will be
-                        | opened directly in your favorite Text Editor. It can even be scroll at
-                        | the very specific line and colunm if your editor support it!
-
-                .col-xs-12.col-sm-4
-                    h3 Autoconfigure Guake
-                    p
-                        | Start Guake automatically at login, and define a script that will be
-                        | executed on Guake launch, in order to configure Guake tabs.
-                    p
-                        | This is temporary solution waiting for the
-                        | <a href="https://github.com/Guake/guake/issues/71">save session feature</a>.
-
-                .col-xs-12.col-sm-4
-                    h3 Plenty of Color palettes
-                    p
-                        | More than 130 predefined palettes are provided! You can easilly visualize
-                        | them prior to choosing the color that is best for you.
-
-            .row
-                .page-scroll.animate-build(data-animation="fade-in" data-build="11")
-                    #more-hook
-                    a.btn.btn-circle(href='#sources')
-                        i.fa.fa-angle-double-down.animated
-
-     //- section#screenshots.slide
-     //-     .container
-     //-        .row
-     //-            .col-lg-8.col-lg-offset-2
-     //-                h1.animate-in(data-animation="space-in" data-build="1")
-     //-                    | See Guake in Action
-     //-                .animate-build(data-animation="fade-in" data-build="2")
-     //-                    #blueimp-gallery.blueimp-gallery.blueimp-gallery-carousel
-     //-                        .slides
-     //-                        h3.title
-     //-                        a.prev
-     //-                        a.next
-     //-                        a.play-pause
-     //-                        ol.indicator
-     //-                    #links.links
-     //-                        a(href="http://farm6.static.flickr.com/5101/13539971585_6c655628e5_b.jpg" title="La finestra" type="image/jpeg" data-gallery="")
-     //-                        a(href="img/screenshot.png" title="Banana" type="image/jpeg" data-gallery)
-     //-                        a(href="img/screenshot.png" title="Banana" type="image/jpeg" data-gallery)
-     //-                        a(href="img/screenshot.png" title="Banana" type="image/jpeg" data-gallery)
-
-     //-        .row
-     //-            .page-scroll.animate-build(data-animation="fade-in" data-build="2")
-     //-                #screenshot-hook
-     //-                a.btn.btn-circle(href='#sources')
-     //-                    i.fa.fa-angle-double-down.animated
-
+    
     section#sources.slide
         .download-section
             .container
                 .col-lg-8.col-lg-offset-2
                     h1.animate-in(data-animation="space-in" data-build="1")
-                        | How can I get Guake?
+                        | How can I get Internet beat time watchface?
 
                     p.animate-build(data-animation="fade-in" data-build="2")
-                        | Guake is packaged by a large number of distributions, among which are Fedora,
-                        | Debian, Ubuntu and ArchLinux, so please check your repo. Source tarballs are
-                        | available; see the <a href="https://github.com/Guake/guake/releases">Release
-                        | page</a>.
-
-                    p.animate-build(data-animation="fade-in" data-build="3")
-                        | You can also checkout directly the course code from the
-                        | git repository. Please check it<i.fa.fa-github>
-                        | <a href="https://github.com/Guake/guake">at the Github page</a>
+                        | Internet beat time watchface is not available on the Google Playstore.
+                        | The best way to get it is compile from sources on my  <a href="https://github.com/Ozzyboshi/InternetBeatTimeWatchFace">GitHub repository</a> using Android Studio.
+                        | If you want the latest bleeding edge experimental release I usually develop in <a href="https://github.com/Ozzyboshi/InternetBeatTimeWatchFace/tree/experimental_branch">this experimental branch</a>.
+                        | If you are not in mood of compiling the source code you can download the apk file from <a href="">here</a>
 
                     p.animate-build(data-animation="fade-in" data-build="4")
-                        | No software is perfect. To file a bug report, use
-                        | <a href="https://github.com/Guake/guake/issues">the Issues
+                        | To file a bug report or ask for a new feature, use
+                        | <a href="https://github.com/Ozzyboshi/InternetBeatTimeWatchFace/issues">the Issues
                         | page of the GitHub project</a>.
-
-                    p.animate-build(data-animation="fade-in" data-build="5")
-                        | General information on how to compile guake can be found in the
-                        | <a href="https://github.com/Guake/guake/blob/master/README.rst">
-                        | README.rst</a> file.
 
                     h1.animate-in(data-animation="space-in" data-build="6")
                         | Can I contribute?
 
                     p.animate-build(data-animation="fade-in" data-build="6")
-                        | Want a feature for Guake? Contributions are welcomed! Guake is mainly
-                        | developed in the Python language, and use the GTK-2 binding.
+                        | Want a feature for Internet beat time watchface ? Contributions are welcomed! Internet beat time watchface is mainly
+                        | developed in the Java language using Android SDK.
+                        | It is based on a tutorial from Andrei Catinean ( <a href="http://catinean.com/2015/03/07/creating-a-watch-face-with-android-wear-api/">http://catinean.com/2015/03/07/creating-a-watch-face-with-android-wear-api/</a>)
                         | Don't hesitate to submit your Pull Request!
 
                     ul.list-inline.banner-social-buttons
                         li
-                            a.btn.btn-default.btn-lg(href='https://github.com/Guake/guake/')
+                            a.btn.btn-default.btn-lg(href='https://github.com/Ozzyboshi/InternetBeatTimeWatchFace')
                                 i.fa.fa-github.fa-fw
                                 span.network-name
                                     | Visit the Github project page

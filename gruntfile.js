@@ -88,7 +88,7 @@ module.exports = function(grunt) {
                 options: {
                     port: 9000,
                     base: 'public',
-                    hostname: 'localhost',
+                    hostname: '0.0.0.0',
                     keepalive: true,
                     livereload: true
                 }
@@ -189,14 +189,6 @@ module.exports = function(grunt) {
                         dest: 'public/js/',
                         filter: 'isFile'
                     },
-                    {
-                        expand: true,
-                        nonull: true,
-                        flatten: true,
-                        src: ['src/img/favicon.ico', 'src/img/favicon.png'],
-                        dest: 'public/',
-                        filter: 'isFile'
-                    },
                 ]
             },
             js: {
@@ -281,7 +273,7 @@ module.exports = function(grunt) {
         sitemap: {
             dist: {
                 siteRoot: 'public/',
-                homepage: 'http://www.guake-project.org',
+                homepage: 'http://internetbeattimewatchface.ozzyboshi.com',
                 pattern: '/*.html',
             },
         }
