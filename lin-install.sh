@@ -7,4 +7,4 @@ if [[ ! -z $https_proxy ]]; then
     npm config set https-proxy ${https_proxy}
 fi
 npm install
-bower install
+bower install --force --allow-root
